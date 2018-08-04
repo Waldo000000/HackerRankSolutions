@@ -1,37 +1,38 @@
-﻿using EasyAssertions;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using NUnit.Framework;
 
 namespace Solutions.Tests
 {
-    [TestClass]
+    [TestFixture]
     public class LeftRotationTest
     {
-        [TestMethod]
+        [Test]
         public void LeftRotate_LessThanArrayLength_RotatesElements()
         {
-            LeftRotation
-                .LeftRotate(new[] { 1, 2, 3, 4, 5 }, 4)
-                .ShouldMatch(5, 1, 2, 3, 4);
+            Assert.That(
+                LeftRotation.LeftRotate(new[] {1, 2, 3, 4, 5}, 4),
+                Is.EqualTo(new[] {5, 1, 2, 3, 4}));
 
-            LeftRotation
-                .LeftRotate(new[] { 1, 2, 3, 4, 5 }, 2)
-                .ShouldMatch(3, 4, 5, 1, 2);
+            Assert.That(
+                LeftRotation.LeftRotate(new[] {1, 2, 3, 4, 5}, 2),
+                Is.EqualTo(new[] {3, 4, 5, 1, 2})
+            );
         }
 
-        [TestMethod]
+        [Test]
         public void LeftRotate_ArrayLength_NoChange()
         {
-            LeftRotation
-                .LeftRotate(new[] { 1, 2, 3, 4, 5 }, 5)
-                .ShouldMatch(1, 2, 3, 4, 5);
+            Assert.That(
+                LeftRotation.LeftRotate(new[] {1, 2, 3, 4, 5}, 5),
+                Is.EqualTo(new[] {1, 2, 3, 4, 5})
+            );
         }
 
-        [TestMethod]
+        [Test]
         public void LeftRotate_MoreThanArrayLength_RotatesElements()
         {
-            LeftRotation
-                .LeftRotate(new[] { 1, 2, 3, 4, 5 }, 6)
-                .ShouldMatch(2, 3, 4, 5, 1);
+            Assert.That(LeftRotation.LeftRotate(new[] {1, 2, 3, 4, 5}, 6),
+                Is.EqualTo(new[] {2, 3, 4, 5, 1})
+            );
         }
     }
 }

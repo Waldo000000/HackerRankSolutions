@@ -5,11 +5,10 @@ namespace Solutions.Tests
     [TestFixture]
     class TimeInWordsTest
     {
-        [Test]
-        public void OnTheHour_ReturnsOclock()
+        [TestCase(5, 0, ExpectedResult = "five o'clock")]
+        public string OnTheHour_ReturnsOclock(int hours, int minutes)
         {
-            Assert.That(TimeInWords.ConvertTimeToWords(5, 0), Is.EqualTo("five o'clock"));
+            return TimeInWords.ConvertTimeToWords(hours, minutes);
         }
-    
     }
 }

@@ -62,6 +62,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Algorithms\Strings\CamelCaseTest.cs" />
+    <Compile Include="DataStructures\LinkedLists\CycleDetectionTest.cs" />
     <Compile Include="LeftRotationTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

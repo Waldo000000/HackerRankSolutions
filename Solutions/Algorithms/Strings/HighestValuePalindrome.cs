@@ -20,7 +20,7 @@ namespace Solutions.Algorithms.Strings
             return Item1 == Item2;
         }
     }
-    
+
     /// <summary>
     /// https://www.hackerrank.com/challenges/richie-rich/problem
     /// </summary>
@@ -40,16 +40,16 @@ namespace Solutions.Algorithms.Strings
             {
                 List<CharPair> pairsYetToCheck = zipped.GetRange(i + 1, totalPairsToCheck - (i + 1));
                 int mismatchingPairsYetToCheck = pairsYetToCheck.Count(pair => !pair.Matches());
-                int budgetForThisPair = budgetRemaining - mismatchingPairsYetToCheck;
-                if (budgetForThisPair >= 2)
+                int pivotDiscount = zipped.Count % 2 == 1 && i == (zipped.Count - 1) / 2
+                    ? 1
+                    : 0;
+                int budgetForThisPair = budgetRemaining - mismatchingPairsYetToCheck + pivotDiscount;
+                if (budgetForThisPair >= 1)
                 {
-                    int cost = SetBothToMax(zipped, i);
-                    budgetRemaining -= cost;
-                }
-                else if (budgetForThisPair == 1)
-                {
-                    int cost = SetToHigher(zipped, i);
-                    budgetRemaining -= cost;
+                    int cost = budgetForThisPair >= 2
+                        ? SetBothToMax(zipped, i)
+                        : SetToHigher(zipped, i);
+                    budgetRemaining -= cost + pivotDiscount;
                 }
                 else if (!zipped[i].Matches())
                 {

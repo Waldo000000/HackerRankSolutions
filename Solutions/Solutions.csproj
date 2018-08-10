@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Algorithms\Strings\CamelCase.cs" />
+    <Compile Include="Algorithms\Strings\HighestValuePalindrome.cs" />
     <Compile Include="DataStructures\LinkedLists\CycleDetection.cs" />
     <Compile Include="LeftRotation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

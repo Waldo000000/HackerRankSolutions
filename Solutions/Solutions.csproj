@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Algorithms\Strings\CamelCase.cs" />
+    <Compile Include="Algorithms\Strings\Gemstones.cs" />
     <Compile Include="Algorithms\Strings\Palindrome\HighestValuePalindrome.cs" />
     <Compile Include="Algorithms\Strings\Palindrome\Pair.cs" />
     <Compile Include="Algorithms\Strings\Palindrome\PairResult.cs" />

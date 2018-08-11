@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Algorithms\Strings\CamelCaseTest.cs" />
     <Compile Include="Algorithms\Strings\Palindrome\HighestValuePalindromeTest.cs" />
+    <Compile Include="DataStructures\Advanced\JimAndTheSkyscrapersTest.cs" />
     <Compile Include="DataStructures\LinkedLists\CycleDetectionTest.cs" />
     <Compile Include="LeftRotationTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

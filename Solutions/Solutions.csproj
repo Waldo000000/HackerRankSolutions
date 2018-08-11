@@ -47,6 +47,7 @@
     <Compile Include="Algorithms\Strings\Palindrome\PairStats.cs" />
     <Compile Include="Algorithms\Strings\Palindrome\Result.cs" />
     <Compile Include="Algorithms\Strings\Palindrome\Stats.cs" />
+    <Compile Include="DataStructures\Advanced\JimAndTheSkyscrapers.cs" />
     <Compile Include="DataStructures\LinkedLists\CycleDetection.cs" />
     <Compile Include="LeftRotation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

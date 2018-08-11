@@ -41,7 +41,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Algorithms\Strings\CamelCase.cs" />
-    <Compile Include="Algorithms\Strings\HighestValuePalindrome.cs" />
+    <Compile Include="Algorithms\Strings\Palindrome\HighestValuePalindrome.cs" />
+    <Compile Include="Algorithms\Strings\Palindrome\Pair.cs" />
+    <Compile Include="Algorithms\Strings\Palindrome\PairResult.cs" />
+    <Compile Include="Algorithms\Strings\Palindrome\PairStats.cs" />
+    <Compile Include="Algorithms\Strings\Palindrome\Result.cs" />
+    <Compile Include="Algorithms\Strings\Palindrome\Stats.cs" />
     <Compile Include="DataStructures\LinkedLists\CycleDetection.cs" />
     <Compile Include="LeftRotation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

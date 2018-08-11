@@ -1,5 +1,6 @@
 ﻿using NUnit.Framework;
 using Solutions.Algorithms.Strings;
+using Solutions.Algorithms.Strings.Palindrome;
 
 namespace Solutions.Tests.Algorithms.Strings
 {

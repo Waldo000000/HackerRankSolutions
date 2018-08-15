@@ -65,6 +65,8 @@
     <Compile Include="Algorithms\Strings\GemstonesTest.cs" />
     <Compile Include="Algorithms\Strings\Palindrome\HighestValuePalindromeTest.cs" />
     <Compile Include="DataStructures\LinkedLists\CycleDetectionTest.cs" />
+    <Compile Include="DataStructures\LinkedLists\MergePointTest.cs" />
+    <Compile Include="DataStructures\LinkedLists\SinglyLinkedListHelper.cs" />
     <Compile Include="LeftRotationTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

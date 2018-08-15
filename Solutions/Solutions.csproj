@@ -49,6 +49,7 @@
     <Compile Include="Algorithms\Strings\Palindrome\Result.cs" />
     <Compile Include="Algorithms\Strings\Palindrome\Stats.cs" />
     <Compile Include="DataStructures\LinkedLists\CycleDetection.cs" />
+    <Compile Include="DataStructures\LinkedLists\MergePoint.cs" />
     <Compile Include="LeftRotation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
